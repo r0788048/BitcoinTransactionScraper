@@ -8,4 +8,4 @@ Requirements:
 - requests: `pip install requests`
 - beautifulsoup4: `pip install bs4`
 
-To run excecute `py scraper.py`.
+To run excecute `python3 scraper.py`.
