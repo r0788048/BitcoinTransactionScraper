@@ -25,8 +25,12 @@ def scrape():
         if(x%3 == 1):
             if (float(allebs[x].text[:-4]) > float(allebs[tel].text[:-4])):
                 tel = x
-
-    print(has[(tel-1)%3].text, allebs[tel-1].text, allebs[tel].text, allebs[tel+1].text)
+    
+    string = has[(tel-1)%3].text + ' ' + allebs[tel-1].text + ' ' + allebs[tel].text + ' ' + allebs[tel+1].text
+    f = open("LogBitcoin.txt", "a")
+    f.write("\n")
+    f.write(string)
+    f.close()
 
 while True:
     scrape()
