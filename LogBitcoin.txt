@@ -1,0 +1,3 @@
+Sample BitcoinTransactionScraper Logfile
+HASH | TIME | AM_BTC | AM_USD
+==============================================
