@@ -9,3 +9,5 @@ Requirements:
 - beautifulsoup4: `pip install bs4`
 
 To run excecute `python3 scraper.py`.
+
+Also make sure you download the `LogBitcoin.txt` file for logs
