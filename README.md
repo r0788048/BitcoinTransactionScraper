@@ -12,3 +12,5 @@ Requirements:
 First install mongoDB by running `bash installmongo`.
 
 To run excecute `python3 scraper.py`. All logs will be added to the mongoDB.
+
+If everything runs well you should get something similar to `works.png`.
