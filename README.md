@@ -9,7 +9,7 @@ Requirements:
 - beautifulsoup4: `pip3 install bs4`
 - pymongo: `pip3 install pymongo`
 
-First install mongoDB by running `bash installmongo`.
+First install mongoDB by running `bash installermongo`.
 
 To run excecute `python3 scraper.py`. All logs will be added to the mongoDB.
 
