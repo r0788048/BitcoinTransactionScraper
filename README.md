@@ -16,4 +16,5 @@ Then install redis by running `bash installerredis`.
 
 To run excecute `python3 scraper.py`. All logs will be added to the mongoDB.
 
-If everything runs well you should get something similar to `works.png`.
+The screenshot of mongo working can be found as`works.png`.
+The screenshot of redis working can be found as `worksredis.png`.
