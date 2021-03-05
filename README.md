@@ -8,6 +8,7 @@ Requirements:
 - requests: `pip3 install requests`
 - beautifulsoup4: `pip3 install bs4`
 - pymongo: `pip3 install pymongo`
+- redis: `python3 -m pip install redis`
 
 First install mongoDB by running `bash installermongo`.
 
