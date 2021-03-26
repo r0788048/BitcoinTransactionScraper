@@ -1,5 +1,4 @@
 from bs4 import BeautifulSoup
-import pymongo as mongo
 import requests
 import time
 import redis
@@ -21,14 +20,6 @@ def scrape():
             r.set(has[int((x-1)/3)].text, redisstring, ex=59)
             if (float(allebs[x].text[:-4]) > float(allebs[tel].text[:-4])):
                 tel = x
-    
-    string = {"hash": has[int((tel-1)/3)].text, "time": allebs[tel-1].text, "am_btc": allebs[tel].text, "am_usd": allebs[tel+1].text}
-    x =  col_transactions.insert_one(string)
-
-client = mongo.MongoClient("mongodb://127.0.0.1:27017")
-
-transactions_db = client["transactions"]
-col_transactions = transactions_db["transactions"]
 
 while True:
     scrape()
