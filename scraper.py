@@ -18,6 +18,7 @@ def scrape():
             redisstring =  allebs[x-1].text + ' | ' + allebs[x].text + ' | ' + allebs[x+1].text
             r = redis.Redis()
             r.set(has[int((x-1)/3)].text, redisstring, ex=59)
+            print("naar redis")
             if (float(allebs[x].text[:-4]) > float(allebs[tel].text[:-4])):
                 tel = x
 
