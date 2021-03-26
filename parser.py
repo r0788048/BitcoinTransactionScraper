@@ -6,13 +6,19 @@ import redis
 def loaddb():
     has = [none] * len(r.keys)
     allebs = [none] * len(r.keys)
-    temp = 0
+    temph = 0
+    tempa = 0
     
     r = redis.Redis()
     for key in r.keys():
-    	has[temp] = key
-    	allebs[temp] = r.get(key)
-    	temp = temp + 1
+    	has[temph] = key
+    	temph = temph + 1
+    	
+    	string = r.get(key)
+    	arr = string.split(" | ")
+    	for val in arr:
+    	    allebs[tempa] = val
+    	    tempa = tempa + 1
 
     tel = 0
     for x in range(0, len(allebs)):
