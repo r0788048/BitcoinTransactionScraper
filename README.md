@@ -14,7 +14,7 @@ First install mongoDB by running `bash installermongo`.
 
 Then install redis by running `bash installerredis`.
 
-To run excecute `python3 scraper.py` and `python3 parser.py`. All logs will be added to the mongoDB.
+To run excecute `python3 bitcoin.py`. All logs will be added to the mongoDB.
 
 Proof that it works:
 - Lesson 2 (MongoDB): `works.PNG`
